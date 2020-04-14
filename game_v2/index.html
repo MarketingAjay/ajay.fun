@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ajay's Game V2</title>
+</head>
+
+<body style="padding-top: 45px;" >
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Ajay's Game</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Win Conditions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./roles.html">Characters</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./history.html">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./current_game.html">Current Game Board</a>
+        </li>
+        <!--
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        -->
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <img src='./images/win_conditions.jpg' width="90%" />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            Evil wins by either killing all non-evil characters or by the Shadow Walker surviving 8 nights. Good wins by killing the Shadow Walker and the Serial Killer. Serial Killer wins when he delivers the killing blow on at least 40% of the players who started the game (a kill on the Guardian taking out wounded characters counts as his kills) and the Shadow Walker is dead.
+          </p>
+          <p>
+            Each night, you may attack (not just others, but yourself as well) unless your role does not allow you to. INSTEAD of attacking, you may choose to activate your special ability if you have one.
+          </p>
+          <p>
+            If a Guardian or Shadow Walker has died and the game is not over, there will be an announcement of his death.
+          </p>
+
+          <p>
+            <b>IMPORTANT:</b> Blocks are applied first, then evil attacks and specials, followed by good specials, followed by serial killer attacks, followed by good attacks. If a player is killed before it is their activation on the queue, the action (whether an attack or a special) will not trigger.
+          </p>
+
+          <p>
+            The evil team knows all starting information received by good characters as well, even if the information was falsified. They also start with information on one character not in play.
+          </p>
+        </div>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h3>General playing info:</h3>
+          <p>
+            <ul>
+              <li>Three starting teams (good, evil, and serial killer)</li>
+              <li>All characters can attack unless otherwise stated</li>
+              <li>Attacks stay during the course of the game</li>
+              <li>Two attacks against the same player kills that player (there are some ways to dodge)</li>
+              <li>No sharing of screenshot conversations with the moderator</li>
+              <li>Each night, players can do one of the following: 1) No Action, 2) Attack, 3) Special.</li>
+              <li>Characters with no listed special can only do no action or attack</li>
+            </ul>
+          </p>
+          <p><a class="btn btn-secondary disabled" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-8">
+          <h3>Starting Characters:</h3>
+          <p>
+            <ul>
+              <li>
+                **Shadow Walker (evil) - You must attack each night. You can attack yourself. If you are attacked twice in one night, you will dodge one attack.
+                SPECIAL: Transfer your role to another member on your team. The new SW must attack tonight but cannot transfer until the next night. When you transfer, you will be exposed publicly during the day. (ex. "Ajay has transferred his role as Shadow Walker.") The new SW loses their old abilities.
+              </li>
+              <li>
+                Serial Killer - You start the game knowing who the Guardian and Shadow Walker are. You also get information on two roles that are not in play that will never be revealed publicly (but may be revealed to select players). You dodge the very first attack targeted at you. While the Guardian is still alive, attacks from the Shadow Walker targeted at you will always miss (but other evil members can still hit). You win if you deliver the killing blow on at least 40% of the players who started the game (a kill on the Guardian taking out wounded characters counts as your kills) and the Shadow Walker is dead.
+                SPECIAL: Dodge an attack tonight. You cannot use this special twice in a row.
+              </li>
+              <li>
+                Guardian - When you die, all wounded players (at the moment you die) on the good team also die. If no players (good or evil) are wounded, two random alive players on the good team lose their abilities. If two attacks occur to you in a single night, you will dodge one.
+                SPECIAL: Pass your guardianship to another player (they lose their ability). Select two players, in order, that were alive during the previous day to attempt to transfer to. The new Guardian will not be killed by good attacks this night and can transfer the next night. If the transfer fails, you instantly die and activate your ability.
+              </li>
+            </ul>
+          </p>
+          <p><a class="btn btn-secondary" href="./roles.html" role="button">View full list &raquo;</a></p>
+        </div>
+        <!--
+        <div class="col-md-4">
+          <h3>Current players (15):</h3>
+          <p>
+            <ul>
+              <li>TBD</li>
+              <li>TBD</li>
+              <li>TBD</li>
+              <li>TBD</li>
+              <li>TBD</li>
+              <li>TBD</li>
+              <li>TBD</li>
+            </ul>
+          </p>
+          <p><a class="btn btn-secondary" href="#" role="button">View full list &raquo;</a></p>
+        </div>
+      -->
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Predetermined events that will likely occur (based on balance)</h1>
+          <p>NOTE: Fake News does not affect the predetermined events.</p>
+
+          <p>On day #1 - Publicly, a police report reveals one evil character that is locked up (not in play) and the judge reveals one good character that is acquitted (not in play). A potentially drunk police officer tells you which row seems least suspicious (has the fewest evil characters). There is a 50% chance he is drunk and his information is incorrect.</p>
+
+          <p>On day #2 - You may give up your ability to attack in order to be put into a group chat with a random member of your team. Their role is revealed to you.</p>
+
+          <p>On day #3 - A public poll will determine one player among 4 randomly selected ones to reveal their role publicly. If a Shadow Walker or Guardian is selected, a GOOD random role that is currently not in play will be announced.</p>
+
+          <p>On day #4 - You may give up your ability to attack in order to be put into a group chat with a random member of your team. Their role is revealed to you. If 40% (rounded down) or more players have given up their ability to attack by the end of this day, you learn if the police officer from day #1 was drunk or not.</p>
+
+          <p>(May not occur) On day #5 - There's a break in the case. All attacks by the Serial Killer will be made public. Additionally, if another similar event has not already happened, 40% of the remaining alive players (rounded down) will be listed as not the Serial Killer. </p>
+
+        </div>
+      </div>
+
+      <hr>
+
+    </div> <!-- /container -->
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

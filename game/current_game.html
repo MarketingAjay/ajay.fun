@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./styles/clock.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ajay's Game #04 Current State</title>
+  <meta property="og:image" content="http://ajay.fun/game/images/game04/day3.jpg" />
+</head>
+
+<body style="padding-top: 20px;" >
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Ajay's Game</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./guide.html">How to Play</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./roles.html">Characters</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./history.html">History</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./current_game.html">Current Game Board</a>
+        </li>
+        <!--
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        -->
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main">
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="">
+          <!-- Reference: https://codepen.io/SitePoint/pen/MwNPVq -->
+          <div class="mx-auto" style="width: 500px;">
+            <h2>Next game day in:</h2>
+            <div id="clockdiv">
+              <div>
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
+              </div>
+              <div>
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+              </div>
+              <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+              </div>
+              <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Javascript for clock must be loaded at the end when all the elements have been rendered -->
+        <script type="text/javascript" src="./scripts/clock.js"></script>
+        <script type="text/javascript">
+          //clearInterval(timeinterval);
+          var deadline = new Date(Date.parse('15 Apr 2020 13:59:59 PDT'));
+          initializeClock('clockdiv', deadline);
+        </script>
+
+        <p style="padding-top: 10px;">
+          <img src='./images/game04/day3.jpg' width="100%" />
+        </p>
+
+        <div style="margin-bottom: -30px;"><a class="btn btn-secondary" href="./roles.html" role="button">View all possible characters &raquo;</a></div>
+      </div>
+
+
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <h3>1 NPC, 20 players: 15 good, 1 serial killer, 4 evil</h3>
+      </div>
+      <hr />
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Important events so far</h3>
+          <ul>
+            <li>04/13 - Players attacked: DJ & Abir. Players dead: Arjun, Krystal, Goku, Victoria, Tobin, Aditi, Anish. From now on, you can submit your actions by 5pm EDT. The next night will be on Wednesday, good luck!!</li>
+            <li>04/11 - Qyburn's brother has successfully prevented one attack on good tonight.</li>
+            <li>04/11 - The Serial Killer exchanged the following information to gain priority attacks. The Scarlet Martyr is not in play and they are not in row #3.</li>
+            <li>04/11 - Day 2 Option: You may give up your ability to attack for the rest of the game in order to be put into a group chat with a random member of your team. Their role is revealed to you. Fake News (if in play) does not affect this information. If you want to take this option, message me some variation of: "I give up my ability to attack for the rest of the game to be introduced to a random member of my team."</li>
+            <li>04/11 - Looks like the Night 1 is starting strong with a quite a bit of bloodshed! Players attacked are Arjun, Aditi, Victoria, Goku, Vincent, Kathy, Krystal. Players who died are Tim and Kai. The moderator was attacked three times. </li>
+            <li>04/08 - Moderator says; The first person to message me with two options, one of which being her correct role, will dodge one attack on them on the second night. Two rules: (1) the time limit to let me know is the end of the first day (this coming Saturday 8pm GMT) and (2) now that she is an observer no one can ask her for her role or any further information about this. This means you need to use what information you have till this point to figure out her role. This option is open to players across all teams.</li>
+            <li>04/07 - Evil has decided to trade information about two evil roles not in play for more information. Two evil roles not in play: Dark phoenix & Death eater.</li>
+            <li>04/07 - An indisputable report reveals that the Scarlet Witch is locked up (not in play) and the judge reveals that the Public Announcer is acquitted (not in play). A potentially drunk police officer tells you that row #1 seems most suspicious (has the most number of evil characters of any row). There is a 50% chance the officer is drunk, and his information is incorrect.</li>
+            <li>04/07 - Game begins!</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Characters Publicly Confirmed Not In Play</h3>
+          <ul>
+            <li>Scarlet Witch (evil)</li>
+            <li>Dark Phoenix (evil)</li>
+            <li>Death Eater (evil)</li>
+            <li>Public Announcer (good)</li>
+            <li>Scarlet Martyr (good)</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Misc. Info</h3>
+          <p>There may be random chaos but these will be announced publicly:</p>
+          <ul>
+            <li>Save all players from attacks for the night</li>
+            <li>Cause random attacks to miss</li>
+            <li>Cause attacks to strike random targets</li>
+            <li>Cause information to be incorrect</li>
+            <li>Etc.</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+    </div> <!-- /container -->
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./styles/clock.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ajay's Game #01 Current State</title>
+  <meta property="og:image" content="http://ajay.fun/game/images/game01/day6.jpg" />
+</head>
+
+<body style="padding-top: 20px;" >
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Ajay's Game</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Win Conditions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./roles.html">Characters</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./history.html">History</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./current_game.html">Current Game Board</a>
+        </li>
+        <!--
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        -->
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main">
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="">
+          <!-- Reference: https://codepen.io/SitePoint/pen/MwNPVq -->
+          <div class="mx-auto" style="width: 500px;">
+            <h2>Next game day in:</h2>
+            <div id="clockdiv">
+              <div>
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
+              </div>
+              <div>
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+              </div>
+              <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+              </div>
+              <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p style="padding-top: 10px;">
+          <img src='./images/game01/day6.jpg' width="100%" />
+        </p>
+
+        <div style="margin-bottom: -30px;"><a class="btn btn-secondary" href="./roles.html" role="button">View all possible characters &raquo;</a></div>
+      </div>
+
+
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Important events so far</h3>
+          <ul>
+            <li>02/21 - <b>(Night 5)</b> Goku is killed. Mitoo and Lingke are attacked.</li>
+            <li>02/21 - Lightning will start striking every night. A poll will be used to save one wounded player. The Guardian and Shadow Walker cannot be killed but may be wounded by lightning.</li>
+            <li>02/20 - Poll 5 - Originally Lingke is randomly attacked but people opt for a reroll with a poll option removed. Vigilante's targets are revealed (N1: Prashanth, N2: Vincent, N3: Prashanth, N4: Mitoo) and a random player is attacked (Krystal).</li>
+            <li>02/19 - <b>(Night 4)</b> DJ & Vincent are killed. John was attacked. Tim's role as the Scarlet Martyr is revealed.</li></li>
+            <li>02/19 - Evil trades more info for an action change. Fake News, Evil Mother, and Selector Detector are not in play.</li>
+            <li>02/19 - Chaos strikes. Time to act is cut short by 32 hours.</li>
+            <li>02/18 - Public poll reveals Tim as one of 4 roles: Twin 1, Dark Phoenix, Pensieve, Scarlet Martyr</li>
+            <li>02/18 - <b>(Night 3)</b> Prashanth is killed</li>
+            <li>02/17 - Evil chooses to reveal that The Scarlet Witch is not in play in exchange for information</li>
+            <li>02/16 - <b>(Night 2)</b> Anish, Vincent, and Kai have been attacked</li>
+            <li>02/15 - Option 2B is selected (vote open to all players, with Krystal getting 2 votes). New info revealed: Blacksmith and Legolas are not in play this game. Death Eater is also not in play.</li>
+            <li>02/15 - Announcement made that Clairvoyant and Serial Killer are not in play.</li>
+            <li>02/15 - <b>(Night 1)</b> Goku, DJ, and Prashanth have been attacked</li>
+            <li>02/13 - Good team votes to take option 1 and no additional public information is revealed at this time</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Characters Confirmed Not In Play</h3>
+          <ul>
+            <li>Serial Killer</li>
+            <li>Clairvoyant (good)</li>
+            <li>Blacksmith (good)</li>
+            <li>Legolas (good)</li>
+            <li>Selector Detector (good)</li>
+            <li>Death Eater (evil)</li>
+            <li>Scarlet Witch (evil)</li>
+            <li>Evil Role Blocker (evil)</li>
+            <li>Fake News (evil)</li>
+            <li>Evil Mother (evil)</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Misc. Info</h3>
+          <p> Deba can cause random chaos but these will be announced publicly:</p>
+          <ul>
+            <li>Save all players from attacks for the night</li>
+            <li>Cause random attacks to miss</li>
+            <li>Cause attacks to strike random targets</li>
+            <li>Cause information to be incorrect</li>
+            <li>Etc.</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+
+    </div> <!-- /container -->
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  <!-- Javascript for clock must be loaded at the end when all the elements have been rendered -->
+  <script type="text/javascript" src="./scripts/clock.js"></script>
+</body>
+
+</html>

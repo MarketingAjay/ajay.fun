@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./styles/clock.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ajay's Game #03 Current State</title>
+  <meta property="og:image" content="http://ajay.fun/game/images/game03/day5.jpg" />
+</head>
+
+<body style="padding-top: 20px;" >
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Ajay's Game</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./guide.html">How to Play</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./roles.html">Characters</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./history.html">History</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./current_game.html">Current Game Board</a>
+        </li>
+        <!--
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        -->
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main">
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="">
+          <!-- Reference: https://codepen.io/SitePoint/pen/MwNPVq -->
+          <div class="mx-auto" style="width: 500px;">
+            <h2>Evil won! Next game day in:</h2>
+            <div id="clockdiv">
+              <div>
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
+              </div>
+              <div>
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+              </div>
+              <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+              </div>
+              <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Javascript for clock must be loaded at the end when all the elements have been rendered -->
+        <script type="text/javascript" src="./scripts/clock.js"></script>
+        <script type="text/javascript">
+          //clearInterval(timeinterval);
+          var deadline = new Date(Date.parse('28 Mar 2020 07:59:59 PST'));
+          initializeClock('clockdiv', deadline);
+        </script>
+
+        <p style="padding-top: 10px;">
+          <img src='./images/game03/day5.jpg' width="100%" />
+        </p>
+
+        <div style="margin-bottom: -30px;"><a class="btn btn-secondary" href="./roles.html" role="button">View all possible characters &raquo;</a></div>
+      </div>
+
+
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <h3>1 NPC, 22 players: 17 good, 1 serial killer, 4 evil</h3>
+      </div>
+      <hr />
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Important events so far</h3>
+          <ul>
+            <li>03/28 - <b>(Night 4)</b> Evil kills the Guardian to wipe the entire good team with a single attack. Dark Phoenix rises during the day. All 4 evil members are alive and SK fails to meet the win condition (due to getting blocked twice for his attack on the Guardian) which means that evil has won.</li>
+            <li>03/28 - Game is sped up. Actions are forced to be submitted sooner. Too many people are way too invested 5+ hours.</li>
+            <li>03/27 - <b>(Night 3)</b> Lots of people are wounded. Tim and Krystal are killed.</li>
+            <li>03/25 - Day 3 SK OPTION has been taken: Reveal publicly that you're not in row 4 AND one of your starting roles as not in play in order to gain priority attacks before evil. The Vampire is not in play.</li>
+            <li>03/25 - <b>(Night 2)</b> Lots of people are wounded. Vincent, John, Lingke, and Ajay (moderator) are killed.</li>
+            <li>03/24 - Day 2 evil OPTION has been taken. 1 random attack on an evil person for 3 non-killing attacks on good.</li>
+            <li>03/23 - Day 2 OPTION:
+            You may give up your ability to attack for the rest of the game in order to be put into a group chat with a random member of your team. Their role is revealed to you. Fake News (if in play) does not affect this information. If you want to take this option, PM ME some variation of: "I give up my ability to attack for the rest of the game to be introduced to a random member of my team"</li>
+            <li>03/23 - <b>(Night 1)</b> Vincent, John, Tony, and Nikita are attacked. Ajay is attacked 6 times, nearing death.</li>
+            <li>03/21 - An indisputable report reveals that the Vigilante is locked up (not in play) and the judge reveals that the Clairvoyant is acquitted (not in play). A potentially drunk police officer tells you that row #2 seems most suspicious (has the most number of evil characters of any row). There is a 50% chance the officer is drunk and his information is incorrect. Evil has decided to trade this info for some additional starting info: Vampire Seeker and Scarlet Witch are not in play.</li>
+            <li>03/21 - Game begins!</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Characters Publicly Confirmed Not In Play</h3>
+          <ul>
+            <li>Vampire Seeker (evil)</li>
+            <li>Scarlet Witch (evil)</li>
+            <li>Vigilante (good)</li>
+            <li>Clairvoyant (good)</li>
+            <li>Vampire (good)</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Misc. Info</h3>
+          <p>There may be random chaos but these will be announced publicly:</p>
+          <ul>
+            <li>Save all players from attacks for the night</li>
+            <li>Cause random attacks to miss</li>
+            <li>Cause attacks to strike random targets</li>
+            <li>Cause information to be incorrect</li>
+            <li>Etc.</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+      <div>
+        <pre>
+        Kai - Serial Killer
+
+        DJ - Fake News
+        Krystal - Dark Phoenix
+        Channa - Shadow Walker
+        Tobin - Evil Role Blocker
+
+        Mitoo - Area 51
+        Tony - Forensic Scientist [can't attack n4]
+        Nikita - Guardian
+
+        Anisha - Pensieve [can't attack n4]
+        Vincent - Cupid
+        Lingke - Qyburn’s brother
+        Anish - Safe Breaker
+        Christine - Tip Line
+        Kiran - Player Blocker
+        Alex - Coronavirus
+        Goku - Scarlet Martyr
+        Tina - Fountain Keeper
+        Tim - Master of Whisperers
+        Yao - Public Announcer
+        Ben - Qyburn
+
+        Deba - Necromancer
+        John - Legolas [can't attack n2]
+
+        In play (17 good, 1 serial killer, 4 evil):
+
+        NOT IN PLAY for everyone:
+        Clairvoyant
+        Vigilante
+
+        NOT IN PLAY for evil:
+        [A] *Twin 1 - You start the game in a group chat with Twin 2.
+        [A] *Twin 2 - You start the game in a group chat with Twin 1.
+        Selector Detector - SPECIAL: Choose a player to learn whom they selected that night.
+
+        NOT IN PLAY for SK:
+        ->[V] Vampire - You are aligned with the good team at the start of the game. If an evil character would deal the killing blow to you, you dodge the attack and there is an announcement to the public of a Vampire Sighting; you now join the evil team. If you were killed by a good character or the Serial Killer, you die aligned with the good.
+        ->Mirror - When you are attacked, the attacker also takes a hit.
+        </pre>
+      </div>
+    </div> <!-- /container -->
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

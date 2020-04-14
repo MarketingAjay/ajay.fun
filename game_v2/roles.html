@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ajay's Game Character Roles</title>
+</head>
+
+<body style="padding-top: 60px;" >
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Ajay's Game</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Win Conditions</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./roles.html">Characters</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./history.html">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./current_game.html">Current Game Board</a>
+        </li>
+        <!--
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        -->
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main">
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Character Info (subject to change!)</h3>
+          <hr />
+          <p>Available characters: 38 total [27 good, 1 vampire (starts good), 1 serial killer, 9 evil characters]</p>
+          <p>Each night, players must reach out to the moderator with one of these three actions: No action, Attack, or Special. If you do not reach out to a moderator during a night, it will be considered as no action.</p>
+          <h5><b>IMPORTANT:</b> Blocks are applied first, then evil attacks and specials, followed by good specials, followed by serial killer attacks, followed by good attacks. If a player is killed before it is their activation on the queue, the action (whether an attack or a special) will not trigger.</h5>
+          <hr />
+
+          <h4>Good Team</h4>
+          <p>Clairvoyant - You start the game knowing how many pairs of evil players are sitting next to each other.
+
+          <p>Area 51 - You start the game knowing if the Shadow Walker is in row #2.
+
+          <p>Forensic Scientist - You start the game knowing if the Serial Killer is in your row.
+
+          <p>Vampire Hunter - You start the game knowing if a vampire is in play. If you attack this character, you will kill him with one shot.
+
+          <p>[A] *Twin 1 - You start the game in a group chat with Twin 2.
+
+          <p>[A] *Twin 2 - You start the game in a group chat with Twin 1.
+
+          <p>*Black Cat - Each night, a random good player in your row gets attacked. When you die, you join the twins' group chat. In some games, the evil team might decide which player receives this role before the game starts.
+
+          <p>[D] Vigilante - When you die, a random member of your team loses their ability.
+
+          <p>Homunculus - When you die, choose a player to learn their character. The Shadow Walker and current Guardian both register as a GOOD character that is not in play.
+
+          <p>Public Announcer - When you die, choose a player (dead or alive) to publicly reveal their role; if you select the Guardian, the Shadow Walker, or the Serial Killer, nothing happens.
+
+          <p>Guardian - When you die, all wounded players (at the moment you die) on the good team also die. If no players (good or evil) are wounded, two random alive players on the good team lose their abilities. If two attacks occur to you in a single night, you will dodge one.
+          SPECIAL: Pass your guardianship to another player (they lose their ability). Select two players, in order, that were alive during the previous day to attempt to transfer to. The new Guardian will not be killed by good attacks this night and can transfer the next night. If the transfer fails, you instantly die and activate your ability.
+
+          <p>Mirror - When you are attacked, the attacker also takes a hit.
+
+          <p>Pensieve - When someone dies, you learn their character. If the dead player is evil, you simply learn that they are evil but not their character.
+
+          <p>Legolas - You dodge the very first attack targeted at you.
+          <br />SPECIAL: Twice during the game, you may attempt to dodge an attack. Any actions that can kill in one shot will ignore your ability and still pierce you to death.
+
+          <p>Qyburn - SPECIAL: At the cost of a random member of your team being attacked, choose a player to learn if they are evil (Serial Killer does not register as evil). The third time you activate this ability, you are killed (but only after you receive the information if you are not blocked or killed by another attack first). Evil will be notified vaguely (not which player) when you choose one of them.
+
+          <p>Tip Line - SPECIAL: Receive the names of 5 players, of which at least 1 is evil. (You might receive the same information multiple times.)
+
+          <p>Blacksmith - SPECIAL: Grant another player the ability to attack one more time this night; you cannot choose the same player twice in a row.
+
+          <p>Safe Breaker - SPECIAL: Choose a role to learn if it is in play.
+
+          <p>Cupid - SPECIAL: Twice during the game, choose two players. If they're both on the same team, a group chat will be created with them (not including Cupid unless self-selected) and they will be notified they were struck by love.
+
+          <p>Fountain Keeper - When you die, all unread notes in the fountain will be revealed publicly.
+          <br />SPECIAL: Choose a player to visit the Fountain. That player is notified and leaves a note which contains their role. Instead of choosing a player, you may attack yourself to learn all of the roles collected at the fountain (but not which player left them).
+
+          <p>Master of Whisperers - SPECIAL: Cannot be activated the first night. Twice during the game, choose a player. They must whisper something which will be revealed to the entire group publicly with their role attached, but not the player name. (Ex. "The Fountain Keeper whispers that the Vampire and Legolas are in play.") Any selected evil player will simply reveal they are evil and can say anything else. (Ex. "An evil player whispers that you are all going to die.") Fake News may affect the announcement.
+
+          <p>Player Blocker - SPECIAL: Twice during the game, block a player from performing an action at night. Even if the player did not take an action, it counts towards your limit. You and the target will be notified if your block was successful.
+
+          <p>Role Blocker - SPECIAL: Twice during the game, block a role from performing an action at night (Shadow Walker and Guardian can still transfer). Even if the role did not take an action, it counts towards your limit. You and the target will be notified if your block was successful.
+
+          <p>Selector Detector - SPECIAL: Choose a player to learn whom they selected that night.
+
+          <p>Scarlet Martyr - SPECIAL: Once during the game, kill any one player with a single attack (except the Guardian or Shadow Walker or Serial Killer). You reveal yourself to everyone after the attack.
+
+          <p>Coronavirus - SPECIAL: Once during the game, choose a player to attack. That player will get attacked this night and two random players sitting adjacent will be attacked the following night if they are not already wounded or dead.
+
+          <p>Necromancer - SPECIAL: Once during the game, revive a dead player to wounded status and allow them to take their action that same night. Abilities are refreshed, including "once" or "twice" per game specials. An announcement is made publicly.
+
+          <p>[V] Vampire - You are aligned with the good team at the start of the game. If an evil character would deal the killing blow to you, you dodge the attack and there is an announcement to the public of a Vampire Sighting; you now join the evil team. If you were killed by a good character or the Serial Killer, you die aligned with the good.
+
+          <hr />
+          <h4>Evil Team</h4>
+
+          <p>[V] **Vampire Seeker - You start the game knowing which player is the Vampire, if there is one.
+
+          <p>[A] **Evil Mother - You start the game knowing which players the twins are.
+
+          <p>[D] **Death Eater - If you attack during a night that the Vigilante or one of the twins does not choose to attack, you attack yourself in addition.
+
+          <p>**Dark Phoenix - When you die, you arise after one more night of being dead with no injuries the day after (revealing yourself publicly in the process).
+
+          <p>**Evil Role Blocker - SPECIAL: Twice during the game, block a role from performing an action (excludes Guardian). Even if the role did not take an action, it counts towards your limit. You and the target will be notified if your block was successful.
+
+          <p>**Fake News - SPECIAL: Twice during the game, cause all information (including "notifications") received to be incorrect both during that night and the following day (including Scarlet Witch reveal and SW transfer - a different random good player will be named instead).
+
+          <p>**Scarlet Witch - SPECIAL: Once during the game, you may kill any one player with a single attack (except the Guardian) but you reveal yourself to everyone after the attack.
+
+          <p>**Dark Magician - SPECIAL: Twice during the game, you may transfer one attack from a wounded player to another player. All dodges apply as though the transferred attack is a normal attack.
+
+          <p>**Shadow Walker - You must attack each night. You can attack yourself. If you are attacked twice in one night, you will dodge one attack.
+          <br />SPECIAL: Transfer your role to another member on your team. The new SW must attack tonight but cannot transfer until the next night. When you transfer, you will be exposed publicly during the day. (ex. "Ajay has transferred his role as Shadow Walker.") The new SW loses their old abilities.
+
+          <hr />
+          <h4>Serial Killer</h4>
+
+          <p>Serial Killer - You start the game knowing who the Guardian and Shadow Walker are. You also get information on two roles that are not in play that will never be revealed publicly unless you take an option to do so (but may still be revealed to select players like Safe Breaker). You dodge the very first attack targeted at you. While the Guardian is still alive, attacks from the Shadow Walker targeted at you will always miss (but other evil members can still hit). You win if you deliver the killing blow on at least 40% of the players who started the game (a kill on the Guardian taking out wounded characters counts as your kills) and the Shadow Walker is dead.
+          <br />SPECIAL: Dodge an attack tonight. You cannot use this special twice in a row.
+
+        </div>
+      </div>
+
+      <hr>
+
+    </div> <!-- /container -->
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ajay's Game</title>
+</head>
+
+<body style="padding-top: 45px;" >
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Ajay's Game</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Win Conditions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./roles.html">Characters</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./history.html">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./current_game.html">Current Game Board</a>
+        </li>
+        <!--
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        -->
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <img src='./images/win_conditions.png' width="90%" />
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h3>General playing info:</h3>
+          <p>
+            <ul>
+              <li>Two starting teams (good and evil)</li>
+              <li>Multiple characters can attack</li>
+              <li>Attacks stay during the course of the game</li>
+              <li>Two attacks against the same player kills that player (there are some ways to dodge)</li>
+              <li>Evil wins by killing Guardian or attacking every good character at least once</li>
+              <li>Good wins by killing Shadow Walker</li>
+            </ul>
+          </p>
+          <p><a class="btn btn-secondary disabled" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-8">
+          <h3>Starting Characters:</h3>
+          <p>
+            <ul>
+              <li>Guardian - When you die, good loses. If two attacks occur to you in a single night, you will dodge one. Once during the game, at night (last action), you may pass your guardianship to another alive player (they lose their ability)</li>
+              <li>[D] Vigilante - You may attack a player at night. When you die, this ability passes to a random good character that is still alive, but they lose their ability</li>
+              <li>Homunculus - When you die, choose a player to learn their character (The Shadow Walker and current Guardian both register as N/A)</li>
+              <li>[A] *Twin 1 - You know who Twin 2 is. Once during the game, if you’re both alive, you may attack a player together</li>
+              <li>[A] *Twin 2 - You know who Twin 1 is. Once during the game, if you’re both alive, you may attack a player together</li>
+              <li>**Scarlet Witch - You may kill any one player with a single attack (except the Guardian) but you reveal yourself to everyone after the attack</li>
+              <li>**Shadow Walker - You must attack each night. Evil wins when you have killed the Guardian or attacked every non-evil player AND the serial killer is dead. Instead of attacking, you may kill yourself to transfer your role to another member on your team.</li>
+            </ul>
+          </p>
+          <p><a class="btn btn-secondary" href="./roles.html" role="button">View full list &raquo;</a></p>
+        </div>
+        <!--
+        <div class="col-md-4">
+          <h3>Current players (15):</h3>
+          <p>
+            <ul>
+              <li>TBD</li>
+              <li>TBD</li>
+              <li>TBD</li>
+              <li>TBD</li>
+              <li>TBD</li>
+              <li>TBD</li>
+              <li>TBD</li>
+            </ul>
+          </p>
+          <p><a class="btn btn-secondary" href="#" role="button">View full list &raquo;</a></p>
+        </div>
+      -->
+      </div>
+
+      <hr>
+
+    </div> <!-- /container -->
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ajay's Game Character Roles</title>
+</head>
+
+<body style="padding-top: 60px;" >
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Ajay's Game</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Win Conditions</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./roles.html">Characters</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./history.html">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./current_game.html">Current Game Board</a>
+        </li>
+        <!--
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        -->
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main">
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Character Info (subject to change!)</h3>
+
+          <h4>Good Team</h4>
+          <p>[D] Vigilante - You may attack a player at night. When you die, this ability passes to a random good character that is still alive, but they lose their ability for the rest of the game. The transfer happens as the last action and the player who received it cannot attack the same night it was transferred.</p>
+
+          <p>Guardian - When you die, good loses. If two attacks occur to you in a single night, you will dodge one. Once during the game, at night (last action), you may pass your guardianship to another alive player (they lose their ability)
+
+          <p>Qyburn - At the cost of a random member of your team being attacked, you may choose a player to learn if they are evil (Serial Killer does not register as evil)
+
+          <p>Clairvoyant - You start the game knowing how many pairs of evil players are sitting next to each other
+
+          <p>Blacksmith - Each night, you may grant another player the ability to attack; you cannot choose the same player twice in a row
+
+          <p>Fountain Keeper - Each night, you may choose a player to visit the Fountain. When they do, they must leave behind information about their role. Instead of choosing a player, you may attack yourself to learn all of the roles collected at the fountain (but not which player left them)
+
+          <p>Master of Whisperers - Each night, you may choose a player to send a direct message to the Vigilante in secret (format: Player {Name} whispers: ""). Some messages may be exposed to the Master of Whisperers
+
+          <p>Legolas - You will dodge the first attack done to you at night
+
+          <p>Pensieve - When someone dies, you learn their character
+
+          <p>Homunculus - When you die, choose a player to learn their character (The Shadow Walker and current Guardian both register as N/A)
+
+          <p>Player Blocker - Twice during the game, you may block a player from performing an action at night
+
+          <p>Role Blocker - Twice during the game, you may block a role from performing an action at night (Shadow Walker and Guardian can still transfer)
+
+          <p>Selector Detector - You may select another player to know whom they selected that night
+
+          <p>Mirror - When attacked, the attacker also takes a hit
+
+          <p>Scarlet Martyr - Once during the game, you may kill any one player with a single attack (except the Guardian or Shadow Walker) but you reveal yourself to everyone after the attack
+
+          <p>Public Announcer - When you die, you may select a player (dead or alive) to publicly reveal their role; If you select the Guardian or the Shadow Walker, nothing happens
+
+          <p>[A] *Twin 1 - You know who Twin 2 is. Once during the game, if you're both alive, you may attack a player together
+
+          <p>[A] *Twin 2 - You know who Twin 1 is. Once during the game, if you're both alive, you may attack a player together
+
+          <p>[V] Vampire - You are aligned with the good team at the start of the game. If an evil character would deal the killing blow to you, you dodge the attack and there is an announcement to the public of a Vampire Sighting; you now join the evil team. If you were killed by a good character, you die aligned with the good.
+
+          <h4>Evil Team</h4>
+          <p>[V] **Vampire Seeker - You start the game knowing which player is the Vampire, if there is one
+
+          <p>**Evil Role Blocker - Twice during the game, you may block a role from performing an action at night (excludes Guardian)
+
+          <p>**Fake News - Twice during the game, cause all information received to be incorrect (including Scarlet Witch reveal)
+
+          <p>**Scarlet Witch - Once during the game, you may kill any one player with a single attack (except the Guardian) but you reveal yourself to everyone after the attack
+
+          <p>[A] **Evil Mother - You know which players the twins are
+
+          <p>[D] **Death Eater - You may attack each night. If you attack during a night that the Vigilante does not attack, you attack yourself in addition
+
+          <p>**Dark Phoenix - When you die, you arise after one night with no injuries (revealing yourself in the process)
+
+          <p>**Shadow Walker - You must attack each night. You can attack yourself. Evil wins when you have killed the Guardian or attacked every non-evil player AND the serial killer is dead. Instead of attacking, you may kill yourself to transfer your role to another member on your team
+
+          <h4>Other Team</h4>
+          <p>Serial killer - You may attack a player each night. You win if the all other players have been attacked AND the shadow walker is dead. Serial killer dodges the first 3 attacks by the evil team.
+
+          <h4>Note on how Guardian transfer works:</h4>
+
+          <p>
+            Evil attacks are applied first and then all other attacks are applied after. If an attack would kill the Guardian the same night he chooses to transfer, the transfer is attempted first, and then that player is killed.
+          </p>
+
+          <p>The Guardian must choose two people (in priority order) to transfer to when activating the transfer. If the first has died, I'll attempt to transfer to the next. If they're both dead, evil wins.</p>
+
+          <p>Only one transfer is allowed for the Guardian role per game for all players combined. The player who becomes the new Guardian is notified and loses their existing ability. Their alignment does not change (evil players stay evil).</p>
+
+          <p>If the Guardian is transferred to the Shadow Walker, and that player is killed, the game ends in a draw. However, evil still has the win condition of having attacked each good player one time when this occurs.</p>
+
+        </div>
+      </div>
+
+      <hr>
+
+    </div> <!-- /container -->
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

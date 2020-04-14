@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./styles/clock.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ajay's Game #02 Current State</title>
+  <meta property="og:image" content="http://ajay.fun/game/images/game02/day5.jpg" />
+</head>
+
+<body style="padding-top: 20px;" >
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Ajay's Game</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Win Conditions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./roles.html">Characters</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./history.html">History</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./current_game.html">Current Game Board</a>
+        </li>
+        <!--
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        -->
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main">
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="">
+          <!-- Reference: https://codepen.io/SitePoint/pen/MwNPVq -->
+          <div class="mx-auto" style="width: 500px;">
+            <h2>Next game day in:</h2>
+            <div id="clockdiv">
+              <div>
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
+              </div>
+              <div>
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+              </div>
+              <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+              </div>
+              <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Javascript for clock must be loaded at the end when all the elements have been rendered -->
+        <script type="text/javascript" src="./scripts/clock.js"></script>
+        <script type="text/javascript">
+          //clearInterval(timeinterval);
+          var deadline = new Date(Date.parse('18 Mar 2020 11:59:59 PST'));
+          initializeClock('clockdiv', deadline);
+        </script>
+
+        <p style="padding-top: 10px;">
+          <img src='./images/game02/day5.jpg' width="100%" />
+        </p>
+
+        <div style="margin-bottom: -30px;"><a class="btn btn-secondary" href="./roles.html" role="button">View all possible characters &raquo;</a></div>
+      </div>
+
+
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <h3>13 players: 9 good, 1 serial killer, 3 evil</h3>
+      </div>
+      <hr />
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Important events so far</h3>
+          <ul>
+            <li>03/16 - All teams call for a draw. SK had highest chance of winning.</li>
+            <li>03/16 - There's a break in the case. These were targets of the Serial Killer. Night 1 - Kiran. Night 2 - N/A. Night 3 - Goku. Night 4 - Anish.</li>
+            <li>03/16 - <b>(Night 4)</b> DJ and Lingke are attacked. Anish is killed.</li>
+            <li>03/15 - <b>(Night 3)</b> Anish and John are attacked. Tim, Kiran, and Goku are killed.</li>
+            <li>03/14 - Evil has taken the day 3 evil OPTION to reavel that Evil Mother and Vampire Hunter are not in play to gain partial protection tonight.</li>
+            <li>03/13 - <b>(Night 2)</b> Goku, Mitoo, and Tim are attacked. Alex and Krystal are killed.</li>
+            <li>03/12 - The Serial Killer (SK) has taken the day 2 SK option. SK will now have priority attacks (SK's attacks apply before evil attacks) in exchange for publicly revealing this info: SK is NOT in Row 3, Area 51 is not in play (this was one of two starting characters received as not in play by SK). This information is not affected by Fake News (if in play). Also, keep in mind that SK needs 6 total kills to win this game.</li>
+            <li>03/11 - You learn that there is a Black Cat in play.</li>
+            <li>03/11 - <b>(Night 1)</b> Arjun (Kiran), Krystal and Alex are attacked. Vincent is killed.</li>
+            <li>03/10 - You overhear a mysterious stranger passing by say that the Blacksmith and Fountain Keeper are hard at work in a different town. These two characters are not in play.</li>
+            <li>03/09 - Coronavirus is nearing 4000 deaths. Forensic scientists are out trying to distinguish poisoning cases from the virus. These two characters are not in play.</li>
+            <li>03/08 - An indisputable report reveals that the Dark Phoenix is locked up (not in play) and the judge reveals that the Vampire is acquitted (not in play). A potentially drunk police officer tells you that row #3 seems least suspicious (has the fewest evil characters). There is a 50% chance the officer is drunk and his information is incorrect.</li>
+            <li>03/08 - Game begins!</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Characters Publicly Confirmed Not In Play</h3>
+          <ul>
+            <li>Dark Phoenix (evil)</li>
+            <li>Evil Mother (evil)</li>
+            <li>Vampire Seeker</li>
+            <li>Vampire</li>
+            <li>Coronavirus</li>
+            <li>Forensic Scientist</li>
+            <li>Blacksmith</li>
+            <li>Fountain Keeper</li>
+            <li>Area 51</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Misc. Info</h3>
+          <p>Can cause random chaos but these will be announced publicly:</p>
+          <ul>
+            <li>Save all players from attacks for the night</li>
+            <li>Cause random attacks to miss</li>
+            <li>Cause attacks to strike random targets</li>
+            <li>Cause information to be incorrect</li>
+            <li>Etc.</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+
+    </div> <!-- /container -->
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
