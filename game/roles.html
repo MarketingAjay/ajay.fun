@@ -54,14 +54,14 @@
         <div class="col-md-12">
           <h3>Character Info (subject to change!)</h3>
           <hr />
-          <p>Available characters: 41 total [3 NPCs, 27 good, 1 vampire (starts good), 1 serial killer, 9 evil characters]</p>
+          <p>Available characters: 48 total [3 NPCs, 30 good, 1 vampire (starts good), 4 elementals, 10 evil characters]</p>
           <p>Each night, players must reach out to the moderator with one of these three actions: No action, Attack, or Special. If you do not reach out to a moderator during a night, it will be considered as no action.</p>
-          <h5><b>IMPORTANT:</b> Blocks are applied first, then dodges, then NPCs, then evil attacks and specials, followed by good specials, followed by serial killer attacks, followed by good attacks. If a player is killed before it is their activation on the queue, the action (whether an attack or a special) will not trigger. If multiple actions are of the same priority (like two good players attacking each other), the order will be chosen randomly.</h5>
+          <h5><b>IMPORTANT:</b> Blocks are applied first, then dodges, then NPCs, then evil attacks and specials, followed by good specials, followed by serial killer attacks, followed by elemental attacks, ending with good attacks. If a player is killed before it is their activation on the queue, the action (whether an attack or a special) will not trigger. If multiple actions are of the same priority (like two good players attacking each other), the order will be chosen randomly.</h5>
           <hr />
           <h4>Non-player Characters (NPCs)</h4>
           <p>[NPC] Black Cat - Each night, a random good player in the same row gets attacked. In some games, the evil team might decide which row the black cat starts in. This NPC requires 4 attacks to kill.</p>
 
-          <p>[NPC] Moderator - Any player can attack this character. If the attack is by a good player, he learns a random character that is in play. All good players who attack this character on the same night will receive the same information. If the attack is by an evil player, he receives the names of 5 players, of which 1 is the Guardian. If the attack is by a serial killer, all information given that night by the moderator will be revealed to SK (if no other person attacked, SK gets no info). This NPC requires 7 attacks to kill. When this NPC is dead, players can no longer attack it. If the information is affected by Fake News, different attacks could get different information.</p>
+          <p>[NPC] Moderator - Any player can attack this character. If the attack is by a good player, he learns a random character that is in play. All good players who attack this character on the same night will receive the same information. If the attack is by an evil player or an elemental, he receives the names of 5 players, of which 1 is the Guardian. This NPC requires 7 attacks to kill. When this NPC is dead, players can no longer attack it. If the information is affected by Fake News, different attacks could get different information.</p>
 
           <p>[NPC] Isfet - On random nights, this NPC causes chaos. Requires 6 attacks to kill.</p>
 
@@ -79,27 +79,31 @@
 
           <p>[A] *Twin 2 - You start the game in a group chat with Twin 1.
 
-          <p>[D] Vigilante - When you die, a random member of your team loses their ability. That player is notified of the loss (they can still continue attacking).
-
-          <p>Homunculus - When you die, choose a player to learn their character. The Shadow Walker and Guardian both register as a GOOD character that is not in play.
-
-          <p>Public Announcer - When you die, choose a player (dead or alive) to publicly reveal their role; if you select the Guardian, the Shadow Walker, or the Serial Killer, nothing happens.
-
-          <p>Guardian - You start the game knowing one player who is on your team. That player does not know you. When you die, all wounded players (at the moment you die) on the good team also die. If no players (good or evil) are wounded, two random alive players on the good team lose their abilities. If two attacks occur to you in a single night, you will dodge one.
-          <br />SPECIAL: One per game, cause ALL attacks during the night to miss (whether good, evil, or serial killer). Specials will still trigger, but the corresponding attacks (like Qyburn's) will not.
+          <p> Quick Attack - Your attacks happen immediately before evil's attacks.
 
           <p>Mirror - When you are attacked, the attacker also takes a hit.
 
           <p>Pensieve - You dodge all attacks on the very first night. When someone dies, you learn their character. If the dead player is evil, you simply learn that they are evil but not their character.
 
-          <p>Legolas - You dodge the very first attack targeted at you.
-          <br />SPECIAL: Twice during the game, you may attempt to dodge an attack. Any actions that can kill in one shot will ignore your ability and still pierce you to death.
+          <p>[D] Vigilante - When you die, a random member of your team loses their ability. That player is notified of the loss (they can still continue attacking).
+
+          <p>Homunculus - When you die, choose a player to learn their character. The Shadow Walker and Guardian both register as a GOOD character that is not in play.
+
+          <p>Public Announcer - When you die, choose a player (dead or alive) to publicly reveal their role; if you select the Guardian, Shadow Walker, Serial Killer, or Secret Elemental nothing happens.
+
+          <p>Fountain Keeper - When you die, all unread notes in the fountain will be revealed publicly.
+          <br />SPECIAL: Choose a player to visit the Fountain. That player is notified and leaves a note which contains their role. Instead of choosing a player, you may attack yourself to learn all of the roles collected at the fountain (but not which player left them).
+
+          <p>Guardian (updated) - You start the game knowing one player who is on your team. That player does not know you. You also start the game with a single role that is not in play to use as a potential bluff. When you die, all wounded players (at the moment you die) on the good team also die. If no players (good or evil) are wounded when you die, two random alive players on the good team lose their abilities. If two attacks occur to you in a single night, you will dodge one.
+          <br />SPECIAL: One per game, cause ALL attacks during the night to miss (whether good, evil, or elementals). Specials will still trigger, but the corresponding attacks (like Qyburn's) will not.
 
           <p>[Q] Qyburn's Brother - When you die, you will be put into a group chat with Qyburn and notified that the brothers have been reunited.
           <br />SPECIAL: Name 2 players you think were attacked by Qyburn's special last night. If either guess is correct, a random good player who was attacked this night will dodge one attack. There will be a public notification when this happens (ex. "Qyburn's brother has successfully prevented one attack").
 
           <p>[Q] Qyburn - When you die, if a Qyburn's brother is in play, you will be put into a group chat together and notified that the brothers have been reunited.
-          <br />SPECIAL: At the cost of a random member of your team being attacked, choose a player to learn if they are evil (Serial Killer does not register as evil). The third time you activate this ability, you are killed (but only after you receive the information if you are not blocked or killed by another attack first). Evil will be notified vaguely (not which player) when you choose one of them.
+          <br />SPECIAL: At the cost of a random member of your team being attacked, choose a player to learn if they are evil (Serial Killer or Elementals do not register as evil). The third time you activate this ability, you are killed (but only after you receive the information if you are not blocked or killed by another attack first). Evil will be notified vaguely (not which player) when you choose one of them.
+
+          <p>Selector Detector - SPECIAL: Choose a player to learn whom they selected that night.
 
           <p>Tip Line - SPECIAL: Receive the names of 5 players, of which at least 1 is evil. (You might receive the same information multiple times.)
 
@@ -107,33 +111,39 @@
 
           <p>Safe Breaker - SPECIAL: Choose a role to learn if it is in play.
 
+          <p>Historian - SPECIAL: Learn how many total attacks happened this night, including missed attacks. If any attacks missed, learn whom they targeted.
+
+          <p>Master of Whispers (updated) - SPECIAL: Choose 2 players. If they received any information this night, you receive the same information.
+
+          <p>Legolas - You dodge the very first attack targeted at you.
+          <br />SPECIAL: Twice during the game, you may attempt to dodge an attack. Any actions that can kill in one shot will ignore your ability and still pierce you to death.
+
+          <p>Eagle Eye - SPECIAL: Twice during game, receive a random piece of information that was obtained by another player the same night.
+
           <p>Cupid - SPECIAL: Twice during the game, choose two players. If they're both on the same team, a group chat will be created with them (not including Cupid unless self-selected) and they will be notified they were struck by love.
 
-          <p>Fountain Keeper - When you die, all unread notes in the fountain will be revealed publicly.
-          <br />SPECIAL: Choose a player to visit the Fountain. That player is notified and leaves a note which contains their role. Instead of choosing a player, you may attack yourself to learn all of the roles collected at the fountain (but not which player left them).
-
-          <p>Master of Whisperers - SPECIAL: Cannot be activated the first night. Twice during the game, choose a player. They must whisper something which will be revealed to the entire group publicly with their role attached, but not the player name. (Ex. "The Fountain Keeper whispers that the Vampire and Legolas are in play.") Any selected evil player will simply reveal they are evil and can say anything else. (Ex. "An evil player whispers that you are all going to die.") Fake News may affect the announcement.
+          <p>Heirophant - SPECIAL: Cannot be activated the first night. Twice during the game, choose a player. They must message something which will be revealed to the entire group publicly with their role attached, but not the player name. (Ex. "The Fountain Keeper messages that the Vampire and Legolas are in play.") Any selected evil player will simply reveal they are evil and can say anything else. (Ex. "An evil player messages that you are all going to die.") Fake News may affect the announcement.
 
           <p>Player Blocker - SPECIAL: Twice during the game, block a player from performing an action at night. Even if the player did not take an action, it counts towards your limit. You and the target will be notified if your block was successful.
 
           <p>Role Blocker - SPECIAL: Twice during the game, block a role from performing an action at night (Shadow Walker can still transfer). Even if the role did not take an action, it counts towards your limit. You and the target will be notified if your block was successful.
 
-          <p>Selector Detector - SPECIAL: Choose a player to learn whom they selected that night.
-
-          <p>Scarlet Martyr - SPECIAL: Once during the game, kill any one player with a single attack (except the Guardian or Shadow Walker or Serial Killer). You reveal yourself to everyone after the attack.
-
-          <p>Coronavirus - SPECIAL: Once during the game, choose a player to attack. That player will get attacked this night and two random players sitting adjacent will be attacked the following night if they are not already wounded or dead.
+          <p>Scarlet Martyr - SPECIAL: Once during the game, kill any one player with a single attack (except the Guardian, Shadow Walker, Serial Killer, or Secret Elemental). You reveal yourself to everyone after the attack.
 
           <p>Necromancer - SPECIAL: Once during the game, revive a dead player to wounded status and allow them to take their action that same night. Abilities are refreshed, including "once" or "twice" per game specials. An announcement is made publicly.
 
-          <p>[V] Vampire - You are aligned with the good team at the start of the game. If an evil character would deal the killing blow to you, you dodge the attack and there is an announcement to the public of a Vampire Sighting; you now join the evil team. If you were killed by a good character or the Serial Killer, you die aligned with the good.
+          <p>[V] Vampire - You are aligned with the good team at the start of the game. If an evil character would deal the killing blow to you, you dodge the attack and there is an announcement to the public of a Vampire Sighting; you now join the evil team. If you were killed by a good character, Serial Killer, or an Elemental, you die aligned with the good.
 
           <hr />
           <h4>Evil Team</h4>
 
+          <p>All members of the evil team will be in a group chat together at the start of the game.
+
           <p>[V] **Vampire Seeker - You start the game knowing which player is the Vampire, if there is one.
 
           <p>[A] **Evil Mother - You start the game knowing which players the twins are.
+
+          <p> **Corrupted Oracle - At the start of the game, choose three players. The moderator will reveal the role of one of those players (including the player name) to you.
 
           <p>[D] **Death Eater - If you attack during a night that the Vigilante or one of the twins does not choose to attack, you attack yourself in addition.
 
@@ -143,7 +153,7 @@
 
           <p>**Fake News - SPECIAL: Twice during the game, cause ALL <i>information</i> received due to character abilities or specials (including "notifications") to be incorrect both during that night and the following day. This includes the Scarlet Witch reveal and the SW transfer; in both cases, a different random good player will be named instead. This does not include events or options.
 
-          <p>**Scarlet Witch - SPECIAL: Once during the game, kill any one player with a single attack (except the Guardian) but you reveal yourself to everyone after the attack.
+          <p>**Scarlet Witch - SPECIAL: Once during the game, kill any one player with a single attack (except the Guardian or Secret Elemental) but you reveal yourself to everyone after the attack.
 
           <p>**Dark Magician - SPECIAL: Twice during the game, transfer one attack from a wounded player to another player. All dodges apply as though the transferred attack is a normal attack.
 
@@ -152,10 +162,49 @@
 
           <hr />
           <h4>Serial Killer</h4>
+          <p> NOT IN PLAY THIS GAME</p>
+
+<!--           <hr />
+          <h4>Serial Killer</h4>
 
           <p>Serial Killer - You start the game knowing who the Shadow Walker is. You receive three names of players who could be the Guardian. You also get information on two roles that are not in play that will never be revealed publicly unless you take an option to do so (but may still be revealed to select players like Safe Breaker). While the Guardian is still alive, you dodge all attacks from evil players. While the Shadow Walker is still alive, you dodge all attacks from good players. If you are among only 5 players or fewer who are left alive, you do not dodge any attacks. You can only be blocked once during a game. You win if you deliver the killing blow on at least 40% of the players who started the game (a kill on the Guardian taking out wounded characters counts as your kills) and the Shadow Walker is dead.
-          <br />SPECIAL: Once during the game, kill any player who is not the Guardian or Shadow Walker with a single attack.
+          <br />SPECIAL: Once during the game, kill any player who is not the Guardian or Shadow Walker with a single attack. -->
 
+          <hr>
+          <h4>Elementals (4 possible)</h4>
+
+          <p>All elementals will be in a group chat together at the start of the game. One elemental will always be secret to all other players, while the rest will be revealed publicly (by name and not role) at the start of the game.</p>
+
+          <p>At the start of each night, the storm counter is reset to 0. When any elemental activates his special, he increments the storm counter by 1. Depending on the value of the storm counter at the end of the elemental phase, one of the following will happen:
+            <ul>
+              <li>0: Nothing happens</li>
+              <li>1: Choose one player to discover what information they learned for this night. No players can be chosen more than once during the game.</li>
+              <li>2: Use the abilities or specials of one good role for this night. No roles can be used more than once during the game.</li>
+              <li>3+: Use the abilities or specials of two different good roles for this night. No roles can be used more than once during the whole game.</li>
+            </ul>
+          </p>
+
+          <p>Secret Elemental (SE) - You dodge all attacks while both the Shadow Walker and Guardian are still alive. If either die, you lose the ability to dodge all attacks but revert to your original elemental role ability. When you die, your entire team is killed as well (wounded or not).
+          <br />SPECIAL: Increase the storm counter by 1.
+          </p>
+
+          <p>NOTE: The Secret Elemental role replaces the core starting role until either the Shadow Walker or Guardian die.</p>
+
+          <p>Fire Elemental - While the Guardian is still alive, you dodge all attacks from evil players.
+          <br />SPECIAL: Increase the storm counter by 1.
+          </p>
+
+          <p>Water Elemental - While the Shadow Walker is still alive, you dodge all attacks from good players.
+          <br />SPECIAL: Increase the storm counter by 1.
+          </p>
+
+          <p>Earth Elemental - You start the game knowing all of the starting information that good players received.
+          <br />SPECIAL: Increase the storm counter by 1.
+          </p>
+
+          <p>Air Elemental - Each night, you dodge one attack.
+          <br />SPECIAL: Increase the storm counter by 1.
+          </p>
         </div>
       </div>
 
