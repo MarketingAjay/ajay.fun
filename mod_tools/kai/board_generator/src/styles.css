@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+}
+
+#chart {
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.player {
+  width: 100px;
+  height: 100px;
+  background: #eee;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.player.injured {
+  background: #bbb;
+}
+
+.player.dead {
+  background: #888;
+}
+
+.empty {
+  background: #fff;
+}
+
+.removed {
+  color: #888;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    #aaa 10px,
+    #ccc 20px
+  );
+}
+
+.player .hit {
+  color: rgb(255, 89, 89);
+}
